@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+       <nav class="navbar">
+        <div class="hamburger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+        
+        <div class="logo">
+            <a href="#">Argie C.</a>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="work_experience.html">Work Experience</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+    <section class="projects">
+    <h1>My Projects</h1>
+    <div class="project-list">
+
+      <div class="project" onclick="openModal('images/project1.png', 'Hospital Management System', 'A Windows-based hospital management solution developed during our case study, built using the .NET Framework in Visual Studio 2022 and MySQL. This system streamlines patient record management, appointment scheduling, and billing automation, enhancing efficiency in hospital operations')">
+        <img src="images/project1.png" alt="Project 1">
+        <h3>Hospital Management System(HMS)</h3>
+        <p>A Windows-based hospital management solution developed during our case study, built using the .NET Framework in Visual Studio 2022 and MySQL.</p>
+      </div>
+      <div class="project" onclick="openModal('images/project2.png', 'E-Commerce Shoe Store', 'A stylish online store built with HTML, CSS, and JavaScript, offering a smooth shopping experience with responsive design, interactive elements, and seamless navigation.')">
+        <img src="images/project2.png" alt="Project 2">
+        <h3>E-Commerce Shoe Store</h3>
+        <p>A stylish online store built with HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <div class="project" onclick="openModal('images/project3.png', 'Fitness Tracker App', 'A sleek fitness app built with Flutter and Firebase, enabling users to track workouts, set goals, and monitor progress with real-time data and secure storage.')">
+        <img src="images/project3.png" alt="Project 3">
+        <h3>Fitness Tracker App</h3>
+        <p>A sleek fitness app built with Flutter and Firebase.</p>
+      </div>
+    </div>
+    </section>
+    <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <img id="modalImage" class="modal-image" src="" alt="Project Image">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+    </div>
+    </div>
+    </main>
+</body>
+</html>
